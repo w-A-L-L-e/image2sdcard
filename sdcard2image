@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# == 1  ] 
+then
+	echo "Copying sdcard into image file $1"
+	dd if=/dev/rdisk1 ibs=4m | pv > $1 
+	echo "All done!"
+else
+	echo "USAGE: sudo sdcard2image <img file> "
+	echo "        Creates a .img file from your sdcard for copying."
+	echo "        This is working but ideally we need to pass -s to get real progress with pv as it now only reports how fast its writing..."
+fi
+
