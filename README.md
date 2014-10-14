@@ -35,3 +35,6 @@ Copying sdcard into image file test.img
 
 ```
 
+Ow yeah and it blindly writes to /dev/rdisk1 ;).
+Please use diskutil list first to make sure this works for your laptop. Again if you format your HD instead using this. Then you should have.... RTFM!
+
