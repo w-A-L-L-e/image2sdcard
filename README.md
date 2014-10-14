@@ -19,4 +19,15 @@ Writing image raspbian.img to micro sd...
 
 ```
 
+You can now also use sudo sdcard2image filename.img
+
+
+Example:
+
+```
+Walters-MacBook-Pro:Image2SDCard wschrep$ sudo sdcard2image test.img 
+Copying sdcard into image file test.img
+ 122MiB 0:00:07 [19.9MiB/s] [                       <=>           ]
+
+```
 
