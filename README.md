@@ -1,6 +1,10 @@
 Example usage:
 sudo image2sdcard raspbian.img
 
+This is optimized for macbooks by using pv and rdisk it writes to micro sd pretty fast.
+About 10mins for a 3GB image file to sdcard...
+
+
 		
 ```
 make
