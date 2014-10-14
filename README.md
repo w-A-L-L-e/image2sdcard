@@ -1,6 +1,3 @@
-make
-sudo make install
-
 Example usage:
 sudo image2sdcard raspbian.img
 
@@ -10,10 +7,15 @@ USAGE: sudo flash_image <img file>
 			!!! WARNING YOUR MICRO SD CARD WILL BE ERASED !!! 
 			
 ```
+make
+sudo make install
+
 sudo image2sdcard raspbian.img 
+
 Unmounting your micro sd... done.
 Writing image raspbian.img to micro sd...
 336MiB 0:01:14 [4.35MiB/s] [4.52MiB/s] [==========>                                                                                          ]  8% ETA 0:12:38
+
 ```
 
 
