@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $# == 1  ] 
+then
+	echo -n "Unmounting your micro sd..."
+	umount /dev/disk1s1
+	echo "done."
+	echo "Writing image $1 to micro sd..."
+
+	pv -ptearb $1 | dd of=/dev/rdisk1 obs=4m
+
+	echo "All done!"
+else
+	echo "USAGE: sudo image2sdcard <img file> "
+	echo "        This flashes a raspbian , ezmoto or any wanted .img file to /dev/rdisk2."
+	echo "        !!! WARNING YOUR MICRO SD CARD WILL BE ERASED !!! "
+fi
+
